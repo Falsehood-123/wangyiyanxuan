@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		div.base {
+			width: 830px;
+			position: absolute;
+			left: 50%;
+			margin-left: -415px;
+			bottom: 100px;
+		}
+		div.base > ul > li {
+			float: left;
+			width: 200px;
+			height: 180px;
+			margin-right: 10px;
+			overflow: hidden;
+
+		}
+		div.base > ul > li:last-child {
+			margin-right: 0;
+		}
+		div.base > ul > li > div {
+			width: 1600px;
+			height: 180px;
+			
+			animation-name: ceshi;
+			animation-duration: 1s;             /*动画完整播放所需要的时间，单位是‘s’；*/
+			animation-iteration-count: infinite;/*动画的重复：infinite无限次；可以输入‘3’数字来表示重复的次数*/
+			animation-timing-function: steps(8);/*动画的时间函数：steps（）是“按步数来计时” linear是线性函数：即匀速播放*/
+		}
+		div.base > ul > li > div > img {
+			width: 100%;
+			height: 180px;
+		}
+
+		@keyframes ceshi {
+			from {
+				margin-left: 0;
+			}
+			to {
+				margin-left: -1600px;
+			}
+		}
+		html,body,.top {
+			height: 100%;
+		}
+		body {
+			margin: 0;
+		}
+		.top {
+			overflow-x: hidden;
+			width: 100%;
+		}
+		div.content {
+			width: 2800px;
+			height: 100%;
+			margin-left: -1000px;
+			background-image: url(../day09/images/bg.jpg);
+
+			animation-name: content;
+			animation-timing-function: linear;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes content {
+			from {
+				margin-left: -1000px;
+			}
+			to {
+				margin-left: 0;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="content"></div>
+	</div>
+	<div class="base">
+		<ul>
+			<li>
+				<div><img src="../day09/images/wk.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="../day09/images/bj.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="../day09/images/ts.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="../day09/images/ss.png" alt=""></div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

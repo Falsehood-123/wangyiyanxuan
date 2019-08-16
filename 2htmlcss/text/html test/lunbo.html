@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+		}
+		.base {
+			height: 300px;
+			width: 400px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		div.outer {
+			width: 1600px;
+			height: 300px;
+			animation-name: outer;
+			animation-duration: 16s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+		div.outer::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		div.outer > div {
+			float: left;
+			width: 400px;
+			height: 300px;
+
+			
+		}
+		div.one {
+			
+			background-image: url(../../photo/cj0.jpg);
+			background-repeat: round;
+		}
+		div.two {
+			
+			background-image: url(../../photo/AD-Yb054.jpg);
+			background-repeat: round;
+		}
+		div.three {
+			
+			background-image: url(../../photo/Py963.jpg);
+			background-repeat: round;
+		}
+		div.four {
+			
+			background-image: url(../../photo/cj0.jpg);
+			background-repeat: round;
+		}
+
+		@keyframes outer {
+			from {
+				margin-left: 0px;
+			}
+			to {
+				margin-left: -1200px;
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<div class="base">
+		<div class="outer">
+			<div class="one"></div>
+			<div class="two"></div>
+			<div class="three"></div>
+			<div class="four"></div>
+		</div>
+	</div>
+</body>
+</html>

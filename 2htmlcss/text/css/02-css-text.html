@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>功能測試</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		ul.nav{
+			background: pink;
+			color: blue;
+		}
+		ul.nav::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		ul.nav>li{
+			float: left;
+			width: 50px;
+			text-align: center;
+			position: relative;
+		}
+		ul.nav>li>ul{
+			display: none;
+			background: lightblue;
+			width: 40px;
+			position: absolute;
+		}
+		ul.nav>li:hover>ul{
+			display: block;
+
+		}
+		div>p{
+			text-shadow:  0 0 5px pink;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul class="nav">
+			<li>
+				<p>aaa</p>
+				<ul>
+					<li>11</li>
+					<li>22</li>
+				</ul>
+			</li>
+			<li>
+				<p>bbb</p>
+				<ul>
+					<li>11</li>
+					<li>22</li>
+				</ul>
+			</li>
+			<li>
+				<p>ccc</p>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<p>一個文本測試</p>
+	</div>
+
+</body>
+</html>

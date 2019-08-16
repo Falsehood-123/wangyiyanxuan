@@ -1,0 +1,2582 @@
+html {
+	font-size: 12px;
+}
+body {
+	margin: 0;
+}
+div.background {
+	background-color: #f4f0ea;
+}
+a {
+	text-decoration-line: none;
+}
+/*导航*/
+div.base {
+	background-color: #333;
+}
+div.base > div.header {
+	width: 1280px;
+	margin: 0 auto;
+}
+div.header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div.header > div {
+	width: 640px;
+	height: 40px;
+}
+div.header::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.header > div.left {
+	float: left;
+	/*background-color: lightblue;*/
+}
+div.left > ul > li {
+	margin-left: 140px;
+}
+div.left > ul > li > i {
+	font-size: 1em;
+	line-height: 40px;
+	color: green;
+}
+div.left > ul > li > a {
+	display: inline-block;
+	color: green;
+	line-height: 40px;
+	padding -left: 100px;
+	text-align: 640px;
+}
+div.header > div.right {
+	/*margin-left: 640px;*/
+	float: right;
+	/*background-color: pink;*/
+}
+div.right > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.header > div.right li {
+	float: left;
+	width: 65px;
+	text-align: center;
+	border-right: 1px solid #ededed;
+	margin-top: 12px;
+}
+div.right > ul > li:nth-child(7) {
+	border: none;
+}
+div.header > div.right li a {
+	color: #ededed;
+	display: inline-block;
+	text-decoration-line: none;
+}
+/*导航结束*/
+/*搜索*/
+div.search-base {
+	background-color: #fff;
+}
+div.search-header {
+	width: 1020px;
+	margin: 0 auto;
+}
+div.search-base > div.search-header::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.logo {
+	width: 350px;
+	height: 100px;
+	/*background-color: #ededed;*/
+	float: left;
+	background-image: url(../../photo/wangyi/wangyi02.png);
+	background-repeat: no-repeat;
+}
+div.searth {
+	width: 520px;
+	height: 100px;
+	/*background-color: #3f3653;*/
+	float: left;
+}
+div.content {
+	width: 520px;
+	height: 40px;
+	margin-top: 30px;
+}
+div.content::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.searth-icon {
+	float: left;
+	width: 40px;
+	box-sizing: border-box;
+	height: 40px;
+	border: 1px solid green;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+div.searth-icon {
+	border-right: none;
+}
+div.searth-icon i.icon {
+	margin-left: 20px;
+	font-size: 20px;
+	line-height: 40px;
+}
+div.searth-icon {
+	color: #ededed;
+}
+div.searth-text {
+	float: left;
+}
+div.searth-text input {
+	width: 380px;
+	height: 38px;
+	padding: 0px;
+	border-left: 0;
+	border-top: 1px solid green;
+	border-bottom: 1px solid green;
+}
+div.searth-text input:focus {
+	outline: none;
+}
+div.searth-text input::-webkit-input-placeholder {
+	color: lightgray;
+}
+div.content div.searth-button {
+	float: left;
+}
+div.content div.searth-button a {
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	width: 80px;
+	text-align: center;
+	line-height: 38px;
+	border-top: 1px solid green;
+	border-bottom: 1px solid green;
+	border-right: 1px solid green;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: green;
+	box-sizing: border-box;
+	text-decoration-line: none;
+}
+div.content > div.text-bottom {
+	float: left;
+	margin: 0 auto;
+}
+div.text-bottom > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.text-bottom > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.text-bottom > ul > li {
+	float: left;
+	width: 80px;
+	text-align: center;
+	border-right: 1px solid #ededed;
+	margin-top: 12px;
+}
+div.text-bottom > ul > li:last-child {
+	border-right: none;
+}
+div.text-bottom > ul > li > a {
+	display: inline-block;
+	color: lightgray;
+	font-size: 10px;
+	text-decoration-line: none;
+}
+div.shop {
+	width: 150px;
+	height: 100px;
+	/*background-color: #fbc678;*/
+	float: left;
+}
+div.shop-botton {
+	width: 130px;
+	height: 40px;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+div.shop-botton a {
+	display: inline-block;
+	width: 120px;
+	line-height: 40px;
+	color: green;
+	font-size: 14px;
+	box-sizing: border-box;
+	border: 1px solid green;
+	border-radius: 20px;
+	text-align: center;
+	text-decoration-line: none;
+}
+div.shop-botton a > i {
+	font-size: 18px;
+}
+/*商品种类*/
+div.beijing {
+	background-color: #fff;
+	position: sticky;
+	top: 0;
+}
+div.kind {
+	width: 1020px;
+	margin: 0 auto;
+	height: 40px;
+}
+div.kind > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+div.kind > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.kind > ul > li {
+	float: left;
+	margin-right: 40px;
+}
+div.kind > ul div {
+	height: 400px;
+	background-color: #fff;
+	border: 1px solid #ededed;
+	position: absolute;
+	left: -20px;
+	right: -20px;
+	top: 100%;
+	display: none;
+}
+div.kind > ul > li:hover div {
+	display: block;
+}
+div.kind > ul > li:hover a {
+	color: red;
+	border-bottom: 2px solid red;
+}
+div.kind > ul > li > a {
+	color: #333;
+	box-sizing: border-box;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 38px;
+	font-size: 14px;
+	text-decoration-line: none;
+}
+/*商品种类结束*/
+/*搜索结束*/
+/*产品轮播*/
+div.prudoct-base {
+	width: 1560px;
+	height: 400px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation-name: lunbo;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes lunbo {
+	0% {
+		background-image: url(../../photo/wangyi/lb01.png);
+	}
+	10% {
+		background-image: url(../../photo/wangyi/lb02.png);
+	}
+	20% {
+		background-image: url(../../photo/wangyi/lb03.png);
+	}
+	30% {
+		background-image: url(../../photo/wangyi/lb04.png);
+	}
+	40% {
+		background-image: url(../../photo/wangyi/lb05.png);
+	}
+	50% {
+		background-image: url(../../photo/wangyi/lb06.png);
+	}
+	60% {
+		background-image: url(../../photo/wangyi/lb07.png);
+	}
+	70% {
+		background-image: url(../../photo/wangyi/lb08.png);
+	}
+	80% {
+		background-image: url(../../photo/wangyi/lb04.png);
+	}
+	90% {
+		background-image: url(../../photo/wangyi/lb06.png);
+	}
+	100% {
+		background-image: url(../../photo/wangyi/lb01.png);
+	}
+}
+/*产品轮播结束*/
+/*右侧固定栏*/
+div.right-base {
+	width: 80px;
+	height: 12000px;
+	position: absolute;
+	top: 600px;
+	right: 0;
+}
+div.right-content {
+	position: sticky;
+	top: 20px;
+}
+div.right-content p {
+	margin: 0;
+}
+div.right-content div:nth-child(1) {
+	height: 150px;
+}
+div.right-content div:nth-child(1) > a {
+	display: block;
+	height: 150px;
+	width: 80px;
+	background-image: url(../../photo/wangyi/yc01.png);
+	background-repeat: round;
+}
+div.right-content div:nth-child(2) {
+	height: 150px;
+}
+div.right-content div:nth-child(2) > a {
+	display: block;
+	height: 150px;
+	width: 80px;
+	background-image: url(../../photo/wangyi/yc02.png);
+	background-repeat: round;
+}
+div.right-content div:nth-child(3) {
+	height: 80px;
+}
+div.right-content div:nth-child(3) > a {
+	display: block;
+	height: 80px;
+	width: 80px;
+	background-image: url(../../photo/wangyi/yc03.png);
+	background-repeat: round;
+}
+div.right-content div:nth-child(4) {
+	height: 80px;
+}
+div.right-content div:nth-child(4) > a {
+	display: block;
+	height: 80px;
+	width: 80px;
+	background-image: url(../../photo/wangyi/yc04.png);
+	background-repeat: round;
+}
+/*右侧固定栏结束*/
+/*品牌新品推荐*/
+div.goods-base {
+	overflow: hidden;
+	height: 1030px;
+	background-color: #fff;
+}
+div.goods {
+	width: 1020px;
+	margin: 50px auto 0;
+}
+div.goods ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.goods ul > li {
+	float: left;
+	background-color: #ffffff;
+}
+div.goods ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.grand-title {
+	height: 60px;
+}
+div.grand-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.grand-title > div {
+	float: left;
+	height: 60px;
+	width: 510px;
+}
+div.grand-title > div:first-child > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.grand-title > div > span {
+	display: inline-block;
+	margin-left: 20px;
+}
+div.grand-title > div:last-child > a {
+	display: inline-block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.grand-title > div:first-child > a:hover {
+	color: red;
+}
+div.grand-title > div:last-child > a:hover {
+	color: red;
+}
+div.grand ul >li:nth-child(1),
+div.grand ul >li:nth-child(2) {
+	height: 400px;
+	width: 335px;
+	margin-right: 10px;
+}
+div.grand ul >li:nth-child(3),
+div.grand ul >li:nth-child(4) {
+	width: 330px;
+	height: 195px;
+}
+div.grand ul >li:nth-child(3) {
+	margin-bottom: 10px
+}
+div.grand ul > li:nth-child(1) > a {
+	display: block;
+	height: 400px;
+	width: 335px;
+	background-image: url(../../photo/wangyi/PPZZS1.png);
+	background-repeat: round;
+	
+}
+div.grand ul > li:nth-child(1):hover{
+	transform: scale(1.02);
+	transition-duration: 2s;
+	transition-property: transform;
+}
+div.grand ul > li:nth-child(2) > a {
+	display: block;
+	height: 400px;
+	width: 335px;
+	background-image: url(../../photo/wangyi/PPZZS2.png);
+	background-repeat: round;
+}
+div.grand ul > li:nth-child(2):hover{
+	transform: scale(1.02);
+	transition-duration: 2s;
+	transition-property: transform;
+}
+div.grand ul > li:nth-child(3) > a {
+	display: block;
+	width: 330px;
+	height: 195px;
+	background-image: url(../../photo/wangyi/PPZZS3.png);
+	background-repeat: round;
+}
+div.grand ul > li:nth-child(4) > a {
+	display: block;
+	width: 330px;
+	height: 195px;
+	background-image: url(../../photo/wangyi/PPZZS4.png);
+	background-repeat: round;
+}
+div.new-title {
+	/*width: 1020px;*/
+	height: 60px;
+	margin-top: 50px;
+}
+div.new-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.new-title > div {
+	float: left;
+	height: 60px;
+	width: 510px;
+}
+div.new-title > div:first-child > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.new-title > div > span {
+	display: inline-block;
+	margin-left: 20px;
+}
+div.new-title > div:first-child > a:hover {
+	color: red;
+}
+div.new-title > div:last-child > a:hover {
+	color: red;
+}
+div.new-title > div:last-child > a {
+	display: inline-block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.new ul > li:nth-child(1),
+div.new ul > li:nth-child(4) {
+	width: 248px;
+	height: 300px;
+}
+div.new ul > li:nth-child(1) {
+	margin-right: 10px;
+}
+div.new ul > li:nth-child(2),
+div.new ul > li:nth-child(3) {
+	width: 247px;
+	height: 300px;
+	margin-right: 10px;
+}
+div.new ul > li:nth-child(1) > a {
+	display: block;
+	width: 248px;
+	height: 300px;
+	background-image: url(../../photo/wangyi/xpsf01.png);
+	background-repeat: round;
+}
+div.new ul > li:nth-child(2) > a {
+	display: block;
+	width: 247px;
+	height: 300px;
+	background-image: url(../../photo/wangyi/xpsf02.png);
+	background-repeat: round;
+}
+div.new ul > li:nth-child(3) > a {
+	display: block;
+	width: 247px;
+	height: 300px;
+	background-image: url(../../photo/wangyi/xpsf03.png);
+	background-repeat: round;
+}
+div.new ul > li:nth-child(4) > a {
+	display: block;
+	width: 248px;
+	height: 300px;
+	background-image: url(../../photo/wangyi/xpsf04.png);
+	background-repeat: round;
+}
+/*品牌新品推荐结束*/
+/*人气推荐*/
+div.recommend-base {
+	width: 1020px;
+	margin: 50px auto;
+}
+div.recommend-title {
+	height: 60px;
+}
+div.recommend-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.recommend-title > div {
+	float: left;
+	height: 60px;
+	width: 510px;
+}
+div.recommend-title > div:first-child > a:nth-child(1) {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.recommend-title > div:first-child > a:nth-child(1)~* {
+	color: #333;
+	display: inline-block;
+	margin: 0 20px;
+}
+div.recommend-title > div:first-child > a:nth-child(2) {
+	color: red;
+	padding-bottom: 2px;
+	border-bottom: 1px solid red;
+}
+div.recommend-title > div:first-child > a:hover {
+	color: red;
+}
+div.recommend-title > div:last-child > a {
+	display: inline-block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.recommend-title > div:last-child > a:hover {
+	color: red;
+}
+/*div.recommend {
+	width: 1020px;
+}*/
+div.recommend > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.recommend > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.recommend > ul >li {
+	float: left;
+}
+div.recommend ul > li:nth-child(1) {
+	width: 396px;
+	height: 600px;
+	margin-right: 10px;
+	background-color: #788069;
+}
+div.recommend ul li:nth-child(1)~* {
+	width: 198px;
+	height: 295px;
+	background-color: #788069;
+}
+div.recommend ul > li:nth-child(2),
+div.recommend ul > li:nth-child(3),
+div.recommend ul > li:nth-child(5),
+div.recommend ul > li:nth-child(6) {
+	margin-right: 10px;
+}
+div.recommend ul > li:nth-child(2),
+div.recommend ul > li:nth-child(3),
+div.recommend ul > li:nth-child(4) {
+	margin-bottom: 10px;
+}
+div.recommend ul > li:nth-child(1) > a {
+	display: block;
+	width: 396px;
+	height: 600px;
+	background-image: url(../../photo/wangyi/rqtj01.png);
+	background-repeat: round;
+}
+div.recommend ul > li:nth-child(2) > a {
+	display: block;
+	width: 198px;
+	height: 295px;
+	background-image: url(../../photo/wangyi/rqtj02.png);
+	background-repeat: round;
+}
+div.recommend ul > li:nth-child(3) > a {
+	display: block;
+	width: 198px;
+	height: 295px;
+	background-image: url(../../photo/wangyi/rqtj03.png);
+	background-repeat: round;
+}
+div.recommend ul > li:nth-child(4) > a {
+	display: block;
+	width: 198px;
+	height: 295px;
+	background-image: url(../../photo/wangyi/rqtj04.png);
+	background-repeat: round;
+}
+div.recommend ul > li:nth-child(5) > a {
+	display: block;
+	width: 198px;
+	height: 295px;
+	background-image: url(../../photo/wangyi/rqtj05.png);
+	background-repeat: round;
+}
+div.recommend ul > li:nth-child(6) > a {
+	display: block;
+	width: 198px;
+	height: 295px;
+	background-image: url(../../photo/wangyi/rqtj06.png);
+	background-repeat: round;
+}
+div.recommend ul > li:nth-child(7) > a {
+	display: block;
+	width: 198px;
+	height: 295px;
+	background-image: url(../../photo/wangyi/rqtj07.png);
+	background-repeat: round;
+}
+/*人气推荐结束*/
+/*限时购*/
+div.limit-base {
+	overflow: hidden;
+	height: 598px;
+	background-color: #fff;
+}
+div.limit-header {
+	width: 1020px;
+	margin: 50px auto 0;
+}
+div.limit-title {
+	height: 60px;
+}
+div.limit-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.limit-title > div {
+	float: left;
+	height: 60px;
+	width: 510px;
+}
+div.limit-title > div:first-child > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.limit-title > div:first-child > a:hover {
+	color: red;
+}
+div.limit-title > div:last-child > a {
+	display: inline-block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.limit-title > div:last-child > a:hover {
+	color: red;
+}
+div.limit ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.limit ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.limit ul > li {
+	float: left;
+}
+div.limit ul > li:nth-child(1) {
+	width: 204px;
+	height: 408px;
+	background-color: #a6c1df;
+}
+div.limit ul > li:nth-child(1) ~* {
+	width: 408px;
+	height: 204px;
+	border-top: 1px solid #f4f0ea;
+	border-right: 1px solid #f4f0ea;;
+	box-sizing: border-box;
+	background-color: #788069;
+}
+div.limit ul > li:nth-child(4),
+div.limit ul > li:nth-child(5) {
+	border-bottom: 1px solid #f4f0ea;
+}
+div.limit ul > li:nth-child(1) > a {
+	display: block;
+	width: 204px;
+	height: 408px;
+	background-image: url(../../photo/wangyi/xsg01.png);
+	background-repeat: round;
+}
+div.limit ul > li:nth-child(2) > a {
+	display: block;
+	width: 408px;
+	height: 204px;
+	background-image: url(../../photo/wangyi/xsg02.png);
+	background-repeat: round;
+}
+div.limit ul > li:nth-child(3) > a {
+	display: block;
+	width: 408px;
+	height: 204px;
+	background-image: url(../../photo/wangyi/xsg03.png);
+	background-repeat: round;
+}
+div.limit ul > li:nth-child(4) > a {
+	display: block;
+	width: 408px;
+	height: 204px;
+	background-image: url(../../photo/wangyi/xsg04.png);
+	background-repeat: round;
+}
+div.limit ul > li:nth-child(5) > a {
+	display: block;
+	width: 408px;
+	height: 204px;
+	background-image: url(../../photo/wangyi/xsg05.png);
+	background-repeat: round;
+}
+/*限时购结束*/
+/*福利社*/
+div.welfare-header {
+	width: 1020px;
+	margin: 50px auto;
+}
+div.welfare-title {
+	height: 60px;
+}
+div.welfare-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.welfare-title > div {
+	float: left;
+	height: 60px;
+	width: 510px;
+}
+div.welfare-title > div:first-child > a:hover {
+	color: red;
+}
+div.welfare-title > div:last-child > a:hover {
+	color: red;
+}
+div.welfare-title > div:first-child > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.welfare-title > div:last-child > a {
+	display: inline-block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.welfare > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.welfare > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.welfare > ul > li {
+	float: left;
+}
+div.welfare > ul > li.one {
+	width: 200px;
+	height: 410px;
+	background-color: #a6c1df;
+}
+div.welfare > ul > li.one > a {
+	display: block;
+	width: 200px;
+	height: 410px;
+	background-image: url(../../photo/wangyi/fls01.png);
+	background-repeat: round;
+}
+div.welfare > ul > li.two {
+	width: 620px;
+	height: 410px;
+	box-sizing: border-box;
+	border-right: 1px solid #f4f0ea;
+	background-color: #fff;
+}
+div.welfare > ul > li.three {
+	width: 200px;
+	height: 410px;
+	background-color: #fff;
+}
+div.welfare ul > li.two > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.welfare ul > li.two > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.welfare li.two > ul > li {
+	float: left;
+}
+div.welfare li.two > ul > li.top {
+	width: 600px;
+	height: 49px;
+	margin: 0 10px;
+	border-bottom: 1px solid #f4f0ea;
+}
+div.welfare li.two > ul > li.top::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.welfare li.two li.top > div {
+	width: 300px;
+	height: 49px;
+	float: left;
+}
+div.welfare li.two li.top > div.left > p {
+	line-height: 49px;
+	font-size: 16px;
+	margin: 0;
+}
+div.welfare li.two li.top div.right::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.welfare li.two li.top div.right > a {
+	float: right;
+	display: inline-block;
+	text-decoration-line: none;
+	color: #333;
+	margin-top: 20px;
+}
+div.welfare li.two li.top div.right > a:hover {
+	color: red;
+}
+div.welfare li.two > ul > li.top~* {
+	width: 295px;
+	height: 165px;
+	margin: 10px 0 0 10px;
+}
+div.welfare li.two > ul > li:nth-child(2) > a {
+	display: block;
+	width: 295px;
+	height: 165px;
+	background-image: url(../../photo/wangyi/fl2.PNG);
+	background-repeat: round;
+}
+div.welfare li.two > ul > li:nth-child(3) > a {
+	display: block;
+	width: 295px;
+	height: 165px;
+	background-image: url(../../photo/wangyi/fl3.PNG);
+	background-repeat: round;
+}
+div.welfare li.two > ul > li:nth-child(4) > a {
+	display: block;
+	width: 295px;
+	height: 165px;
+	background-image: url(../../photo/wangyi/fl4.PNG);
+	background-repeat: round;
+}
+div.welfare li.two > ul > li:nth-child(5) > a {
+	display: block;
+	width: 295px;
+	height: 165px;
+	background-image: url(../../photo/wangyi/fl5.PNG);
+	background-repeat: round;
+}
+div.welfare li.three ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+div.welfare li.three ul > li {
+	background-color: #fff;
+	margin-left: 10px; 
+	width: 180px;
+}
+div.welfare li.three ul.first div {
+	width: 90px;
+	height: 20px;
+	float: left;
+}
+div.welfare li.three ul.first li.top::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.welfare li.three ul.first div.left > p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 20px;
+}
+div.welfare li.three ul.first div.right::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.welfare li.three ul.first div.right > a {
+	float: right;
+	color: #333;
+	margin-top: 4px;
+}
+div.welfare li.three ul.first div.right > a:hover {
+	color: red;
+}
+div.welfare li.three ul.second div {
+	width: 90px;
+	height: 20px;
+	float: left;
+}
+div.welfare li.three ul.second li.top::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.welfare li.three ul.second div.left > p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 20px;
+}
+div.welfare li.three ul.second div.right::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.welfare li.three ul.second div.right > a {
+	float: right;
+	color: #333;
+	display: inline-block;
+	margin-top: 4px;
+}
+div.welfare li.three ul.second div.right > a:hover {
+	color: red;
+}
+div.welfare li.three ul > li:nth-child(1) {
+	height: 20px;
+	margin-bottom: 10px;
+}
+div.welfare li.three ul.first > li:nth-child(1) {
+	margin-top: 10px;
+}
+div.welfare li.three ul > li:nth-child(2),
+div.welfare li.three ul > li:nth-child(3) {
+	height: 75px;
+	margin-bottom: 10px;
+}
+div.welfare li.three ul.first > li:nth-child(2) > a {
+	display: block;
+	width: 180px;
+	height: 75px;
+	background-image: url(../../photo/wangyi/flsr01.png);
+	background-repeat: round;
+}
+div.welfare li.three ul.first > li:nth-child(3) > a {
+	display: block;
+	width: 180px;
+	height: 75px;
+	background-image: url(../../photo/wangyi/flsr02.png);
+	background-repeat: round;
+}
+div.welfare li.three ul.second > li:nth-child(2) > a {
+	display: block;
+	width: 180px;
+	height: 75px;
+	background-image: url(../../photo/wangyi/flsr03.png);
+	background-repeat: round;
+}
+div.welfare li.three ul.second > li:nth-child(3) > a {
+	display: block;
+	width: 180px;
+	height: 75px;
+	background-image: url(../../photo/wangyi/flsr04.png);
+	background-repeat: round;
+}
+/*福利社结束*/
+/*居家生活*/
+div.life-base {
+	background-color: #fff;
+}
+div.life-header {
+	width: 1020px;
+	height: 920px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+div.life-title {
+	height: 60px;
+	margin-top: 50px;
+}
+div.life-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.life-title > div {
+	float: left;
+}
+div.life-title > div.one {
+	height: 60px;
+	width: 300px;
+}
+div.life-title > div.two {
+	height: 60px;
+	width: 720px;
+}
+div.life-title > div.one > a:hover {
+	color: red;
+}
+div.life-title > div.two > a:hover {
+	color: red;
+}
+div.life-title > div.one > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.life-title > div.two::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.life-title div.two {
+	position: relative;
+}
+div.life-title div.two > div.two-a {
+	float: right;
+	height: 60px;
+}
+div.life-title > div.two > div.two-a > a {
+	display: block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.life-title > div.two > div.two-a > a:hover {
+	color: red;
+}
+div.life-title div.two-list {
+	position: absolute;
+	right: 90px;
+	height: 60px;
+	float: left;
+}
+div.life-title > div.two  ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.life-title > div.two  ul::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+div.life-title > div.two  ul > li {
+	float: left;
+	margin-top: 30px;
+	/*font-weight: bold;*/
+}
+div.life-title > div.two  ul > li a {
+	color: #333;
+	display: inline-block;
+	margin: 0 10px;
+}
+div.life-title > div.two  ul > li:hover a {
+	color: red;
+}
+div.life-top {
+	height: 350px;
+	margin-bottom: 30px;
+	background-color: #666da4;
+}
+div.life-top > a {
+	display: block;
+	width: 1020px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/jjsh01.png);
+	background-repeat: round;
+}
+div.life ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.life ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.life ul > li {
+	float: left;
+	height: 350px;
+	background-color: #788069;
+}
+div.life ul > li:nth-child(2),
+div.life ul > li:nth-child(3) {
+	width: 248px;
+	margin-right: 10px;
+}
+div.life ul > li:nth-child(1) {
+	width: 247px;
+	margin-right: 10px;
+}
+div.life ul > li:nth-child(4) {
+	width: 247px;
+}
+div.life ul > li:nth-child(1) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/jjsh02.png);
+	background-repeat: round;
+}
+div.life ul > li:nth-child(2) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/jjsh03.png);
+	background-repeat: round;
+}
+div.life ul > li:nth-child(3) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/jjsh04.png);
+	background-repeat: round;
+}
+div.life ul > li:nth-child(4) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/jjsh05.png);
+	background-repeat: round;
+}
+/*居家生活结束*/
+/*服饰鞋包*/
+div.costume-base {
+	background-color: #fff;
+}
+div.costume-header {
+	width: 1020px;
+	height: 920px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+div.costume-title {
+	height: 60px;
+	margin-top: 50px;
+}
+div.costume-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.costume-title > div {
+	float: left;
+}
+div.costume-title > div.one {
+	height: 60px;
+	width: 300px;
+}
+div.costume-title > div.two {
+	height: 60px;
+	width: 720px;
+}
+div.costume-title > div.one > a:hover {
+	color: red;
+}
+div.costume-title > div.two > a:hover {
+	color: red;
+}
+div.costume-title > div.one > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.costume-title > div.two::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.costume-title div.two {
+	position: relative;
+}
+div.costume-title > div.two > div.two-a {
+	float: right;
+	height: 60px;
+}
+div.costume-title > div.two > div.two-a > a {
+	display: block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.costume-title > div.two > div.two-a > a:hover {
+	color: red;
+}
+ div.costume-title div.two-list {
+	position: absolute;
+	right: 90px;
+	height: 60px;
+	float: left;
+}
+div.costume-title > div.two  ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.costume-title > div.two  ul::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+div.costume-title > div.two  ul > li {
+	float: left;
+	margin-top: 30px;
+	/*font-weight: bold;*/
+}
+div.costume-title > div.two  ul > li a {
+	color: #333;
+	display: inline-block;
+	margin: 0 10px;
+}
+div.costume-title > div.two  ul > li:hover a {
+	color: red;
+}
+div.costume-top {
+	height: 350px;
+	margin-bottom: 30px;
+	background-color: #666da4;
+}
+div.costume-top > a {
+	display: block;
+	width: 1020px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/fs.jpg);
+	background-repeat: round;
+}
+div.costume ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.costume ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.costume ul > li {
+	float: left;
+	height: 350px;
+	background-color: #788069;
+}
+div.costume ul > li:nth-child(2),
+div.costume ul > li:nth-child(3) {
+	width: 248px;
+	margin-right: 10px;
+}
+div.costume ul > li:nth-child(1) {
+	width: 247px;
+	margin-right: 10px;
+}
+div.costume ul > li:nth-child(4) {
+	width: 247px;
+}
+div.costume ul li:nth-child(1) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/fs1.PNG);
+	background-repeat: round;
+}
+div.costume ul li:nth-child(2) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/fs2.PNG);
+	background-repeat: round;
+}
+div.costume ul li:nth-child(3) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/fs3.PNG);
+	background-repeat: round;
+}
+div.costume ul li:nth-child(4) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/fs4.PNG);
+	background-repeat: round;
+}
+/*服饰鞋包结束*/
+/*美食酒水*/
+div.food-base {
+	background-color: #fff;
+}
+div.food-header {
+	width: 1020px;
+	height: 920px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+div.food-title {
+	height: 60px;
+	margin-top: 50px;
+}
+div.food-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.food-title > div {
+	float: left;
+}
+div.food-title > div.one {
+	height: 60px;
+	width: 300px;
+}
+div.food-title > div.two {
+	height: 60px;
+	width: 720px;
+}
+div.food-title > div.one > a:hover {
+	color: red;
+}
+div.food-title > div.two > a:hover {
+	color: red;
+}
+div.food-title > div.one > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.food-title > div.two::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.food-title div.two {
+	position: relative;
+}
+div.food-title div.two > div.two-a {
+	float: right;
+	height: 60px;
+}
+div.food-title > div.two > div.two-a > a {
+	display: block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.food-title > div.two > div.two-a > a:hover {
+	color: red;
+}
+div.food-title div.two-list {
+	position: absolute;
+	right: 90px;
+	height: 60px;
+	float: left;
+}
+div.food-title > div.two  ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.food-title > div.two  ul::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+div.food-title > div.two  ul > li {
+	float: left;
+	margin-top: 30px;
+	/*font-weight: bold;*/
+}
+div.food-title > div.two  ul > li a {
+	color: #333;
+	display: inline-block;
+	margin: 0 10px;
+}
+div.food-title > div.two  ul > li:hover a {
+	color: red;
+}
+div.food-top {
+	height: 350px;
+	margin-bottom: 30px;
+	background-color: #666da4;
+}
+div.food-top > a {
+	display: block;
+	width: 1020px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/ms.jpg);
+	background-repeat: round;
+}
+div.food ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.food ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.food ul > li {
+	float: left;
+	height: 350px;
+	background-color: #788069;
+}
+div.food ul > li:nth-child(2),
+div.food ul > li:nth-child(3) {
+	width: 248px;
+	margin-right: 10px;
+}
+div.food ul > li:nth-child(1) {
+	width: 247px;
+	margin-right: 10px;
+}
+div.food ul > li:nth-child(4) {
+	width: 247px;
+}
+div.food ul li:nth-child(1) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/ms1.PNG);
+	background-repeat: round;
+}
+div.food ul li:nth-child(2) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/ms2.PNG);
+	background-repeat: round;
+}
+div.food ul li:nth-child(3) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/ms3.PNG);
+	background-repeat: round;
+}
+div.food ul li:nth-child(4) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/ms4.PNG);
+	background-repeat: round;
+}
+/*美食酒水结束*/
+/*个护清洁*/
+div.cleaning-base {
+	background-color: #fff;
+}
+div.cleaning-header {
+	width: 1020px;
+	height: 920px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+div.cleaning-title {
+	height: 60px;
+	margin-top: 50px;
+}
+div.cleaning-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.cleaning-title > div {
+	float: left;
+}
+div.cleaning-title > div.one {
+	height: 60px;
+	width: 300px;
+}
+div.cleaning-title > div.two {
+	height: 60px;
+	width: 720px;
+}
+div.cleaning-title > div.one > a:hover {
+	color: red;
+}
+div.cleaning-title > div.two > a:hover {
+	color: red;
+}
+div.cleaning-title > div.one > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.cleaning-title > div.two::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.cleaning-title div.two {
+	position: relative;
+}
+div.cleaning-title div.two > div.two-a {
+	float: right;
+	height: 60px;
+}
+div.cleaning-title > div.two > div.two-a > a {
+	display: block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.cleaning-title > div.two > div.two-a > a:hover {
+	color: red;
+}
+div.cleaning-title div.two-list {
+	position: absolute;
+	right: 90px;
+	height: 60px;
+	float: left;
+}
+div.cleaning-title > div.two  ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.cleaning-title > div.two  ul::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+div.cleaning-title > div.two  ul > li {
+	float: left;
+	margin-top: 30px;
+	/*font-weight: bold;*/
+}
+div.cleaning-title > div.two  ul > li a {
+	color: #333;
+	display: inline-block;
+	margin: 0 10px;
+}
+div.cleaning-title > div.two  ul > li:hover a {
+	color: red;
+}
+div.cleaning-top {
+	height: 350px;
+	margin-bottom: 30px;
+	background-color: #666da4;
+}
+div.cleaning-top > a {
+	display: block;
+	width: 1020px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/gh.jpg);
+	background-repeat: round;
+}
+div.cleaning ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.cleaning ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.cleaning ul > li {
+	float: left;
+	height: 350px;
+	background-color: #788069;
+}
+div.cleaning ul > li:nth-child(2),
+div.cleaning ul > li:nth-child(3) {
+	width: 248px;
+	margin-right: 10px;mum
+}
+div.cleaning ul > li:nth-child(1) {
+	width: 247px;
+	margin-right: 10px;
+}
+div.cleaning ul > li:nth-child(4) {
+	width: 247px;
+}
+div.cleaning ul > li:nth-child(1) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/gh1.PNG);
+	background-repeat: round;
+}
+div.cleaning ul > li:nth-child(2) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/gh2.PNG);
+	background-repeat: round;
+}
+div.cleaning ul > li:nth-child(3) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/gh3.PNG);
+	background-repeat: round;
+}
+div.cleaning ul > li:nth-child(4) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/gh4.PNG);
+	background-repeat: round;
+}
+/*个护清洁结束*/
+/*母婴亲子*/
+div.mun-base {
+	height: 920px;
+	background: #fff;
+}
+div.mum-header {
+	width: 1020px;
+	height: 920px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+div.mun-title {
+	height: 60px;
+	margin-top: 50px;
+}
+div.mun-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.mun-title > div {
+	float: left;
+}
+div.mun-title > div.one {
+	height: 60px;
+	width: 300px;
+}
+div.mun-title > div.two {
+	height: 60px;
+	width: 720px;
+}
+div.mun-title > div.one > a:hover {
+	color: red;
+}
+div.mun-title > div.two > a:hover {
+	color: red;
+}
+div.mun-title > div.one > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.mun-title > div.two::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.mun-title div.two {
+	position: relative;
+}
+div.mun-title div.two > div.two-a {
+	float: right;
+	height: 60px;
+}
+div.mun-title > div.two > div.two-a > a {
+	display: block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.mun-title > div.two > div.two-a > a:hover {
+	color: red;
+}
+div.mun-title div.two-list {
+	position: absolute;
+	right: 90px;
+	height: 60px;
+	float: left;
+}
+div.mun-title > div.two  ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.mun-title > div.two  ul::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+div.mun-title > div.two  ul > li {
+	float: left;
+	margin-top: 30px;
+	/*font-weight: bold;*/
+}
+div.mun-title > div.two  ul > li a {
+	color: #333;
+	display: inline-block;
+	margin: 0 10px;
+}
+div.mun-title > div.two  ul > li:hover a {
+	color: red;
+}
+div.mum-top {
+	height: 350px;
+	margin-bottom: 30px;
+	background-color: #666da4;
+}
+div.mum-top > a {
+	display: block;
+	width: 1020px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/my.jpg);
+	background-repeat: round;
+}
+div.mum ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.mum ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.mum ul > li {
+	float: left;
+	height: 350px;
+	background-color: #788069;
+}
+div.mum ul > li:nth-child(2),
+div.mum ul > li:nth-child(3) {
+	width: 248px;
+	margin-right: 10px;
+}
+div.mum ul > li:nth-child(1) {
+	width: 247px;
+	margin-right: 10px;
+}
+div.mum ul > li:nth-child(4) {
+	width: 247px;
+}
+div.mum ul > li:nth-child(1) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/my1.PNG);
+	background-repeat: round;
+}
+div.mum ul > li:nth-child(2) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/my2.PNG);
+	background-repeat: round;
+}
+div.mum ul > li:nth-child(3) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/my3.PNG);
+	background-repeat: round;
+}
+div.mum ul > li:nth-child(4) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/my4.PNG);
+	background-repeat: round;
+}
+/*母婴亲子结束*/
+/*运动旅行*/
+div.sport-base {
+	background-color: #fff;
+}
+div.sport-header {
+	width: 1020px;
+	height: 920px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+div.sport-title {
+	height: 60px;
+	margin-top: 50px;
+}
+div.sport-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.sport-title > div {
+	float: left;
+}
+div.sport-title > div.one {
+	height: 60px;
+	width: 200px;
+}
+div.sport-title > div.two {
+	height: 60px;
+	width: 820px;
+}
+div.sport-title > div.one > a:hover {
+	color: red;
+}
+div.sport-title > div.two > a:hover {
+	color: red;
+}
+div.sport-title > div.one > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.sport-title > div.two::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.sport-title div.two {
+	position: relative;
+}
+div.sport-title div.two > div.two-a {
+	float: right;
+	height: 60px;
+}
+div.sport-title > div.two > div.two-a > a {
+	display: block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.sport-title > div.two > div.two-a > a:hover {
+	color: red;
+}
+div.sport-title div.two-list {
+	position: absolute;
+	right: 90px;
+	height: 60px;
+	float: left;
+}
+div.sport-title > div.two  ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.sport-title > div.two  ul::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+div.sport-title > div.two  ul > li {
+	float: left;
+	margin-top: 30px;
+	/*font-weight: bold;*/
+}
+div.sport-title > div.two  ul > li a {
+	color: #333;
+	display: inline-block;
+	margin: 0 10px;
+}
+div.sport-title > div.two  ul > li:hover a {
+	color: red;
+}
+div.sport-top {
+	height: 350px;
+	margin-bottom: 30px;
+	background-color: #666da4;
+}
+div.sport-top > a {
+	display: block;
+	width: 1020px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/yd.jpg);
+	background-repeat: round;
+}
+div.sport ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.sport ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.sport ul > li {
+	float: left;
+	height: 350px;
+	background-color: #788069;
+}
+div.sport ul > li:nth-child(2),
+div.sport ul > li:nth-child(3) {
+	width: 248px;
+	margin-right: 10px;
+}
+div.sport ul > li:nth-child(1) {
+	width: 247px;
+	margin-right: 10px;
+}
+div.sport ul > li:nth-child(4) {
+	width: 247px;
+}
+div.sport ul > li:nth-child(1) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/yd1.PNG);
+	background-repeat: round;
+}
+div.sport ul > li:nth-child(2) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/yd2.PNG);
+	background-repeat: round;
+}
+div.sport ul > li:nth-child(3) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/yd3.PNG);
+	background-repeat: round;
+}
+div.sport ul > li:nth-child(4) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/yd4.PNG);
+	background-repeat: round;
+}
+/*运动旅行结束*/
+/*数码家电*/
+div.appliance-base {
+	background-color: #fff;
+}
+div.appliance-header {
+	width: 1020px;
+	height: 920px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+div.appliance-title {
+	height: 60px;
+	margin-top: 50px;
+}
+div.appliance-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.appliance-title > div {
+	float: left;
+}
+div.appliance-title > div.one {
+	height: 60px;
+	width: 300px;
+}
+div.appliance-title > div.two {
+	height: 60px;
+	width: 720px;
+}
+div.appliance-title > div.one > a:hover {
+	color: red;
+}
+div.appliance-title > div.two > a:hover {
+	color: red;
+}
+div.appliance-title > div.one > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.appliance-title > div.two::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.appliance-title div.two {
+	position: relative;
+}
+div.appliance-title div.two > div.two-a {
+	float: right;
+	height: 60px;
+}
+div.appliance-title > div.two > div.two-a > a {
+	display: block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.appliance-title > div.two > div.two-a > a:hover {
+	color: red;
+}
+div.appliance-title div.two-list {
+	position: absolute;
+	right: 90px;
+	height: 60px;
+	float: left;
+}
+div.appliance-title > div.two  ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.appliance-title > div.two  ul::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+div.appliance-title > div.two  ul > li {
+	float: left;
+	margin-top: 30px;
+	/*font-weight: bold;*/
+}
+div.appliance-title > div.two  ul > li a {
+	color: #333;
+	display: inline-block;
+	margin: 0 10px;
+}
+div.appliance-title > div.two  ul > li:hover a {
+	color: red;
+}
+div.appliance-top {
+	height: 350px;
+	margin-bottom: 30px;
+	background-color: #666da4;
+}
+div.appliance-top > a {
+	display: block;
+	width: 1020px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/sm.jpg);
+	background-repeat: round;
+}
+div.appliance ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.appliance ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.appliance ul > li {
+	float: left;
+	height: 350px;
+	background-color: #788069;
+}
+div.appliance ul > li:nth-child(2),
+div.appliance ul > li:nth-child(3) {
+	width: 248px;
+	margin-right: 10px;
+}
+div.appliance ul > li:nth-child(1) {
+	width: 247px;
+	margin-right: 10px;
+}
+div.appliance ul > li:nth-child(4) {
+	width: 247px;
+}
+div.appliance ul > li:nth-child(1) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/sm1.PNG);
+	background-repeat: round;
+}
+div.appliance ul > li:nth-child(2) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/sm2.PNG);
+	background-repeat: round;
+}
+div.appliance ul > li:nth-child(3) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/sm3.PNG);
+	background-repeat: round;
+}
+div.appliance ul > li:nth-child(4) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/sm4.PNG);
+	background-repeat: round;
+}
+/*数码家电结束*/
+/*全球特色*/
+div.features-base {
+	background-color: #fff;
+}
+div.features-header {
+	width: 1020px;
+	height: 920px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+div.features-title {
+	height: 60px;
+	margin-top: 50px;
+}
+div.features-title::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.features-title > div {
+	float: left;
+}
+div.features-title > div.one {
+	height: 60px;
+	width: 300px;
+}
+div.features-title > div.two {
+	height: 60px;
+	width: 720px;
+}
+div.features-title > div.one > a:hover {
+	color: red;
+}
+div.features-title > div.two > a:hover {
+	color: red;
+}
+div.features-title > div.one > a {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	color: #333;
+}
+div.features-title > div.two::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.features-title div.two {
+	position: relative;
+}
+div.features-title div.two > div.two-a {
+	float: right;
+	height: 60px;
+}
+div.features-title > div.two > div.two-a > a {
+	display: block;
+	float: right;
+	margin-top: 30px;
+	color: #333;
+}
+div.features-title > div.two > div.two-a > a:hover {
+	color: red;
+}
+div.features-title div.two-list {
+	position: absolute;
+	right: 90px;
+	height: 60px;
+	float: left;
+}
+div.features-title > div.two  ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.features-title > div.two  ul::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+div.features-title > div.two  ul > li {
+	float: left;
+	margin-top: 30px;
+	/*font-weight: bold;*/
+}
+div.features-title > div.two  ul > li a {
+	color: #333;
+	display: inline-block;
+	margin: 0 10px;
+}
+div.features-title > div.two  ul > li:hover a {
+	color: red;
+}
+div.features-top {
+	height: 350px;
+	margin-bottom: 30px;
+	background-color: #666da4;
+}
+div.features-top > a {
+	display: block;
+	width: 1020px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/qq.jpg);
+	background-repeat: round;
+}
+div.features ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.features ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.features ul > li {
+	float: left;
+	height: 350px;
+	background-color: #788069;
+}
+div.features ul > li:nth-child(2),
+div.features ul > li:nth-child(3) {
+	width: 248px;
+	margin-right: 10px;
+}
+div.features ul > li:nth-child(1) {
+	width: 247px;
+	margin-right: 10px;
+}
+div.features ul > li:nth-child(4) {
+	width: 247px;
+}
+div.features ul > li:nth-child(1) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/qq1.PNG);
+	background-repeat: round;
+}
+div.features ul > li:nth-child(2) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/qq2.PNG);
+	background-repeat: round;
+}
+div.features ul > li:nth-child(3) > a {
+	display: block;
+	width: 248px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/qq3.PNG);
+	background-repeat: round;
+}
+div.features ul > li:nth-child(4) > a {
+	display: block;
+	width: 247px;
+	height: 350px;
+	background-image: url(../../photo/wangyi/qq4.PNG);
+	background-repeat: round;
+}
+/*全球特色结束*/
+/*甄选家*/
+div.selection-base {
+	background-color: #fff;
+}
+div.selection-header {
+	width: 1020px;
+	height: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+div.selection-title {
+	height: 60px;
+	margin-top: 50px;
+}
+div.selection-title > div > span:first-child {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+}
+div.selection-title > div > span:last-child {
+	display: inline-block;
+	margin-left: 20px;
+}
+div.selection ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.selection ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.selection ul > li {
+	float: left;
+	background-color: #788069;
+}
+div.selection ul > li:nth-child(1) {
+	height: 410px;
+	width: 600px;
+	margin-right: 10px;
+}
+div.selection ul > li:nth-child(2) {
+	width: 410px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+div.selection ul > li:nth-child(3) {
+	width: 410px;
+	height: 200px;
+}
+div.selection ul > li:nth-child(1) > a {
+	display: block;
+	width: 600px;
+	height: 410px;
+	background-image: url(../../photo/wangyi/z1.PNG);
+	background-repeat: round;
+}
+div.selection ul > li:nth-child(2) > a {
+	display: block;
+	width: 410px;
+	height: 200px;
+	background-image: url(../../photo/wangyi/z2.PNG);
+	background-repeat: round;
+}
+div.selection ul > li:nth-child(3) > a {
+	display: block;
+	width: 410px;
+	height: 200px;
+	background-image: url(../../photo/wangyi/z3.PNG);
+	background-repeat: round;
+}
+/*甄选家结束*/
+/*大家都在说*/
+div.talk-base {
+	width: 1020px;
+	margin: 50px auto 50px;
+}
+div.talk-title > div > span:first-child {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+}
+div.talk-title > div > span:last-child {
+	display: inline-block;
+	margin-left: 20px;
+}
+div.talk ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.talk ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.talk ul > li {
+	float: left;
+	height: 450px;
+	background-color: #788069;
+}
+div.talk ul > li:nth-child(1) {
+	width: 333px;
+	margin-right: 10px;
+}
+div.talk ul > li:nth-child(2) {
+	width: 334px;
+	margin-right: 10px;
+}
+div.talk ul > li:nth-child(3) {
+	width: 333px;
+}
+div.talk ul > li:nth-child(1) > a {
+	display: block;
+	width: 333px;
+	height: 450px;
+	background-image: url(../../photo/wangyi/t1.PNG);
+	background-repeat: round;
+}
+div.talk ul > li:nth-child(2) > a {
+	display: block;
+	width: 334px;
+	height: 450px;
+	background-image: url(../../photo/wangyi/t2.PNG);
+	background-repeat: round;
+}
+div.talk ul > li:nth-child(3) > a {
+	display: block;
+	width: 333px;
+	height: 450px;
+	background-image: url(../../photo/wangyi/t3.PNG);
+	background-repeat: round;
+}
+/*大家都在说结束*/
+/*客户服务*/
+div.service-base {
+	background-color: #fff;
+	height: 350px;
+	overflow: hidden;
+}
+div.service {
+	width: 1020px;
+	margin: 50px auto 50px;
+}
+div.service ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.service ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.service ul > li {
+	float: left;
+	height: 250px;
+	width: 340px;
+	background-color: #788069;
+}
+div.service ul > li:nth-child(2) {
+	width: 338px;
+	border-left: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+}
+div.service ul > li:nth-child(1) > a {
+	display: block;
+	width: 340px;
+	height: 250px;
+	background-image: url(../../photo/wangyi/fw01.png);
+	background-repeat: round;
+}
+div.service ul > li:nth-child(2) > a {
+	display: block;
+	width: 338px;
+	height: 250px;
+	background-image: url(../../photo/wangyi/fw02.png);
+	background-repeat: round;
+}
+div.service ul > li:nth-child(3) > a {
+	display: block;
+	width: 340px;
+	height: 250px;
+	background-image: url(../../photo/wangyi/fw03.png);
+	background-repeat: round;
+}
+/*客户服务结束*/
+/*网页底端*/
+div.bottom-base {
+	background-color: #414141;
+}
+div.bottom-header {
+	width: 1020px;
+	margin: 0 auto;
+}
+div.bottom-top {
+	height: 100px;
+	border-bottom: 1px solid #ededed;
+}
+div.bottom-top > a {
+	display: block;
+	width: 1020px;
+	height: 100px;
+	background-image: url(../../photo/wangyi/gy01.png);
+	background-repeat: round;
+}
+div.bottom-down {
+	height: 200px;
+}
+div.bottom-down > a {
+	display: block;
+	width: 1020px;
+	height: 200px;
+	background-image: url(../../photo/wangyi/gy02.png);
+	background-repeat: round;
+}
+/*网页底端结束*/

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台界面</title>
+	<style>
+		html,body,.base {
+			height: 100%;
+		}
+		body {
+			margin: 0;
+		}
+		.base {
+			background-color: lightblue;
+		}
+		div.top {
+			height: 120px;
+			background-color: teal;
+		}
+		div.down {
+			position: absolute;
+			width: 100%;
+			top: 120px;
+			bottom: 0;
+			overflow: hidden;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		div.down > div.left {
+			width: 120px;
+			height: 100%;
+			float: left;
+			background-color: #333;
+		}
+		div.down > div.right {
+			height: 100%;
+			margin-left: 130px;
+			border-radius: 5px;
+			background-color: #ededed;
+			overflow: auto;
+		}
+		div.left > ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		div.left > ul > li {
+			height: 60px;
+			border-bottom: 1px solid #ededed;
+			text-align: center;
+			line-height: 60px;
+			font-size: 14px;
+		}
+		div.left > ul > li:hover {
+			background-color: lightblue;
+		}
+		div.left > ul > li > a {
+			text-decoration-line: none;
+			color: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="base">
+		<div class="top"></div>
+		<div class="down">
+			<div class="left">
+				<ul>
+					<li> <i></i>
+						<a href="#">学生信息</a>
+					</li>
+					<li> <i></i>
+						<a href="#">成绩</a>
+					</li>
+					<li> <i></i>
+						<a href="#">信息</a>
+					</li>
+					<li> <i></i>
+						<a href="#">其他</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="right">
+				<table>
+					<thead>
+						<tr>
+							<td>测试</td>
+						</tr>
+					</thead>
+					<caption>
+						<tr>
+							<td>测试一</td>
+						</tr>
+						<tbody>
+							<tr>
+								<td>姓名</td>
+								<td>性别</td>
+								<td>学号</td>
+								<td>成绩</td>
+							</tr>
+							<tr>
+								<td>aa</td>
+								<td>bb</td>
+								<td>cc</td>
+								<td>dd</td>
+							</tr>
+						</tbody>
+					</caption>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

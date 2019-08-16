@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动</title>
+	<style>
+		.content {
+			width: 300px;
+			height: 450px;
+			border: 2px solid #333;
+			margin: 0 auto;
+		}
+		.content > div {
+			height: 300px;
+			width: 300px;
+			float: left;
+			margin-left: -150px;
+			opacity: .5;
+		}
+		.content >div:first-child {
+			background-color: lightblue;
+
+		}
+		.content >div:last-child {
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div></div>
+		<div></div>
+	</div>	
+</body>
+</html>

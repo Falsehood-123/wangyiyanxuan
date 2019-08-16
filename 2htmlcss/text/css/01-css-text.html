@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*标签选择器*/
+		body,ul {
+			margin: 0;
+		}
+		div {
+			border: 1px;
+		}
+		div#one {
+			color: red;
+		}
+		div.text>ul {
+			color: red;
+		}
+		.name .words .word{
+			color: red;
+			list-style: none;	
+		}
+		div.border{
+			background: lightblue;
+			border: 1px;
+			color: red;
+		}
+		.name{
+			background-color: lightblue;
+		}
+		div.border{
+			background: pink;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="border">
+		<span>sss</span>
+	</div>
+
+	<div>
+		<p>AAAAAA</p>
+	</div>
+	<div class="text">
+		<ul>
+			<li>11</li>
+			<li>22</li>
+			<li>33</li>
+			<li>44</li>
+		</ul>
+	</div>
+	
+	<div class="header">
+		<a href="">111</a>
+			<ul>
+				<li><a href="">222</a></li>
+				<li><a href="">333</a></li>
+			</ul>
+	</div>			
+	<div class="name">
+		<ul class="words">
+			<li class="word">AA</li>
+			<li class="word">BB</li>
+			<li class="word">CC</li>
+		</ul>
+	</div>
+
+	<div id="one">AAA</div>
+	<div id="two">BBB</div>
+
+
+</body>
+</html>

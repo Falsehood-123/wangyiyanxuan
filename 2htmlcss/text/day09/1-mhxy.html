@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>梦幻西游</title>
+	<link rel="stylesheet" href="../common.css">
+	<style>
+		.content {
+			width: 950px;
+			position: absolute;
+			left: 50%;
+			margin-left: -475px;
+			bottom: 10px;
+		}
+		.content > ul {
+			margin: 0;
+			padding: 0;
+		}
+		.content > ul::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+		.content > ul > li {
+			float: left;
+			width: 200px;
+			height: 180px;
+			margin-right: 50px;
+			overflow: hidden;
+		}
+		.content > ul > li:last-child {
+			margin-right: 0;
+		}
+		.content > ul > li > div {
+			width: 1600px;
+			height: 180px;
+
+			animation-name: dong;
+			animation-duration: 1s;
+			animation-timing-function: steps(8);
+			animation-iteration-count: infinite;
+			/*animation-direction: reverse;*/
+		}
+		.content > ul > li > div  img {
+			width: 100%;
+			height: 180px;
+		}
+
+		/*定义动画*/
+		@keyframes dong {
+			from {
+				margin-left: 0;
+			}
+			to {
+				margin-left: -1600px;
+			}
+		}
+
+		html,body,.main {
+			height: 100%;
+		}
+		.main {
+			width: 100%;
+			overflow-x: hidden;
+		}
+		.main > .bg {
+			width: 3920px;
+			height: 100%;
+			margin-left: -1920px;
+			background-image: url('./images/bg.jpg');
+			background-repeat: repeat-x;
+
+			animation-name: bg;
+			animation-duration: 30s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes bg {
+			from {
+				margin-left: -1920px
+			}
+			to {
+				margin-left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="bg"></div>
+	</div>
+	<!-- 屏幕中间 宽 200 * 4 + 50*3 = 950 -->
+	<div class="content">
+		<ul>
+			<li>
+				<div><img src="./images/wk.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="./images/bj.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="./images/ts.png" alt=""></div>
+			</li>
+			<li>
+				<div><img src="./images/ss.png" alt=""></div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
